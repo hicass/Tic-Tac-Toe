@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(26, 25, 25);
+    color: rgb(255, 243, 224);
+    font-family: 'Amatic SC', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+header {
+    color: rgb(255, 217, 158);
+    font-size: 10vmin;
+    margin-top: 1vmin;
+}
+
+h1 {
+    font-size: 8vmin;
+    margin-top: -1vmin;
+}
+
+#board {
+    display: grid;
+    grid-template-rows: repeat(3, 17vmin);
+    grid-template-columns: repeat(3, 17vmin);
+}
+
+#board > div {
+    border-color: rgb(255, 243, 224);
+    border-style: solid;
+    font-size: 15vmin;
+    text-align: center;
+}
+
+button {
+    font-family: 'Amatic SC', cursive;
+    font-size: 5vmin;
+    margin-top: 5vmin;
+    padding: 1vmin;
+    background-color: rgba(255, 243, 224, 70%);
+    color: rgb(26, 25, 25);
+    border-radius: 15px;
+    border: 0;
+}
+
+button:hover {
+background-color: rgb(255, 217, 158);
+}
