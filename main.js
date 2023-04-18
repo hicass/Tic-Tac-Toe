@@ -76,8 +76,9 @@ function render() {
     if (winner === 'T') {
         // messageEl gets updated to show if there is a tie
         messageEl.innerText = "It's a tie!";
+        btn.style.visibility = "visible";
     }
-    if (winner !==null ) {
+    if (winner !== null ) {
         // messageEl gets updated to show winner
         // Gets corresponding PLAYERS object info to display correct win message by updating messageEl HTML
         messageEl.innerHTML = `<span style="color: ${PLAYERS[winner].color}">${PLAYERS[winner].symbol}</span> wins!`; 
